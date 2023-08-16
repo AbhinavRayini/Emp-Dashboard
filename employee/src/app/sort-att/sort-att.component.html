@@ -1,0 +1,43 @@
+<!-- <header>
+    <h1>Employees Organization</h1>
+</header>
+<nav>
+    <ul>
+        <li>
+            <a routerLink="/emp"><b>Empolyee</b> </a>
+          </li>
+          <li>
+            <a routerLink="/filter"><b>Filter</b></a>
+          </li>
+          <li>
+            <a routerLink="/sort"><b>Sort</b></a>
+          </li>
+          <li>
+            <a routerLink="/dashboard"><b>Dashboard</b></a>
+          </li>
+    
+
+    </ul>
+</nav> -->
+
+<table>
+    <thead>
+      <tr>
+        <th (click)="sort('id')">ID</th>
+        <th (click)="sort('firstName')">FirstName</th>
+        <th (click)="sort('lastName')">LastName</th>
+        <th (click)="sort('emailId')">Email</th>
+        <th (click)="sort('department')">Department</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.firstName }}</td>
+          <td>{{ employee.lastName }}</td>
+          <td>{{ employee.emailId}}</td>
+          <td>{{ employee.department }}</td>
+        </tr>
+      </tbody>
+  </table>
+  

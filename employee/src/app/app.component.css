@@ -1,0 +1,10 @@
+.one{
+    background-color: rgb(183, 179, 179);
+    padding: 6px;
+    text-align: center;
+}
+li{
+ list-style-type: none;
+ text-underline-offset: unset;
+ float: left;
+}

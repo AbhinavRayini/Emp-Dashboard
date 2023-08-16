@@ -1,0 +1,26 @@
+
+<input type="text" [(ngModel)]="department" (input)="searchByDep()"  placeholder="Search Department..."/>
+
+<table>
+  <thead>
+    <tr>
+        <th>ID</th>
+        <th>Firtsname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Department</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let employee of temp1">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.firstName }}</td>
+        <td>{{ employee.lastName }}</td>
+        <td>{{ employee.emailId}}</td>
+        <td>{{ employee.department}}</td>
+      </tr>
+    </tbody>
+</table>
+
+
+

@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-SpringjpademoApplication<springjpademo>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.hitachi.springjpademo.SpringjpademoApplication",
+            "projectName": "springjpademo",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
